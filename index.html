@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mowrix | AI Agent App Development Agency</title>
+  <meta name="description" content="mowrix는 AI 에이전트를 이용해 현대적인 애플리케이션을 빠르게 빌드하는 에이전시입니다. 바이브코딩 입문자를 위한 명확한 프로세스를 제공합니다.">
+  <meta property="og:title" content="mowrix">
+  <meta property="og:description" content="AI 에이전트로, 아이디어를 앱으로.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mowrix.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">본문 바로가기</a>
+
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="logo">mowrix</a>
+      <button class="menu-toggle" aria-controls="site-nav" aria-expanded="false" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
+        <a href="#services" data-i18n="nav_services">서비스</a>
+        <a href="#process" data-i18n="nav_process">프로세스</a>
+        <a href="#cases" data-i18n="nav_cases">사례</a>
+        <a href="#pricing" data-i18n="nav_pricing">요금</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+        <a href="#contact" class="btn btn-primary nav-cta" data-track="header_consult" data-i18n="nav_consult">무료 상담 신청</a>
+
+        <div class="controls-inline" aria-label="언어/테마 설정">
+          <div class="lang-switch" role="group" aria-label="언어 선택">
+            <button type="button" class="lang-btn" data-lang="ko" aria-pressed="true">KO</button>
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+            <button type="button" class="lang-btn" data-lang="ja" aria-pressed="false">JA</button>
+          </div>
+          <button id="themeToggle" type="button" class="btn btn-secondary theme-toggle" data-track="theme_toggle">Dark</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="hero_eyebrow">AI 에이전트 네이티브 에이전시</p>
+          <h1 data-i18n="hero_title">AI 에이전트로,<br>아이디어를 앱으로.</h1>
+          <p class="lead" data-i18n="hero_lead">mowrix는 입문자도 이해할 수 있는 프로세스로 현대적인 애플리케이션을 빠르게 빌드합니다.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary" data-track="hero_start_project" data-i18n="hero_start">프로젝트 시작하기</a>
+            <a href="#process" class="btn btn-secondary" data-track="hero_view_process" data-i18n="hero_view_process">작업 방식 보기</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="agent-flow">
+            <div class="flow-node" data-i18n="flow_step1">문제정의</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node" data-i18n="flow_step2">에이전트 설계</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node" data-i18n="flow_step3">빌드/검증</div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-node" data-i18n="flow_step4">배포</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <h2 class="reveal" data-i18n="services_heading">핵심 제안 가치</h2>
+        <div class="card-grid value-grid">
+          <article class="card reveal">
+            <h3 data-i18n="value_fast_mvp_title">빠른 MVP</h3>
+            <p data-i18n="value_fast_mvp_desc">주 단위로 검증 가능한 결과물을 만들어 비즈니스 가설을 빠르게 테스트합니다.</p>
+          </article>
+          <article class="card reveal">
+            <h3 data-i18n="value_agent_collab_title">에이전트 협업</h3>
+            <p data-i18n="value_agent_collab_desc">기획, 개발, 테스트 반복 과정을 AI 에이전트 중심으로 자동화해 생산성을 높입니다.</p>
+          </article>
+          <article class="card reveal">
+            <h3 data-i18n="value_sustainable_title">지속 가능한 코드</h3>
+            <p data-i18n="value_sustainable_desc">유지보수가 쉬운 구조로 설계해 향후 인수인계와 확장 비용을 줄입니다.</p>
+          </article>
+          <article class="card reveal">
+            <h3 data-i18n="value_data_improvement_title">데이터 기반 개선</h3>
+            <p data-i18n="value_data_improvement_desc">사용자 반응과 이벤트 데이터를 바탕으로 제품을 반복 개선합니다.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process">
+      <div class="container">
+        <h2 class="reveal" data-i18n="process_heading">작동 방식</h2>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="step">01</span>
+            <h3 data-i18n="process_step1_title">문제 정의</h3>
+            <p data-i18n="process_step1_desc">목표 사용자, 핵심 기능, 성공 지표를 명확히 정리합니다.</p>
+            <p class="output" data-i18n="process_step1_output">산출물: 요구사항 요약서, 우선순위 백로그</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="step">02</span>
+            <h3 data-i18n="process_step2_title">에이전트 설계</h3>
+            <p data-i18n="process_step2_desc">역할별 AI 에이전트 흐름을 설계해 반복 가능한 빌드 체계를 구성합니다.</p>
+            <p class="output" data-i18n="process_step2_output">산출물: 에이전트 워크플로우, 작업 규칙 세트</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="step">03</span>
+            <h3 data-i18n="process_step3_title">빌드/검증</h3>
+            <p data-i18n="process_step3_desc">핵심 기능을 구현하고 테스트하며 사용자 피드백 루프를 돌립니다.</p>
+            <p class="output" data-i18n="process_step3_output">산출물: 동작 가능한 MVP, 테스트 리포트</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="step">04</span>
+            <h3 data-i18n="process_step4_title">배포/개선</h3>
+            <p data-i18n="process_step4_desc">실서비스 배포 후 데이터 기반으로 성능과 UX를 지속적으로 개선합니다.</p>
+            <p class="output" data-i18n="process_step4_output">산출물: 배포 체크리스트, 개선 로드맵</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cases">
+      <div class="container">
+        <h2 class="reveal" data-i18n="cases_heading">성과 미리보기</h2>
+        <div class="card-grid case-grid">
+          <article class="card reveal">
+            <h3 data-i18n="case1_title">교육 플랫폼 MVP</h3>
+            <p data-i18n="case1_desc">3주 내 베타 오픈, 초기 사용자 1,200명 확보</p>
+          </article>
+          <article class="card reveal">
+            <h3 data-i18n="case2_title">SaaS 온보딩 자동화</h3>
+            <p data-i18n="case2_desc">전환율 22% 개선, 운영 공수 35% 절감</p>
+          </article>
+          <article class="card reveal">
+            <h3 data-i18n="case3_title">내부 업무 도구 구축</h3>
+            <p data-i18n="case3_desc">반복 업무 리드타임 40% 단축</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <h2 class="reveal" data-i18n="pricing_heading">요금 스냅샷</h2>
+        <div class="card-grid pricing-grid">
+          <article class="card pricing-card reveal">
+            <h3 data-i18n="pricing_starter_name">Starter</h3>
+            <p class="price" data-i18n="pricing_starter_price">월 190만원~</p>
+            <ul>
+              <li data-i18n="pricing_starter_feature1">랜딩/PoC 구축</li>
+              <li data-i18n="pricing_starter_feature2">주간 진행 리포트</li>
+              <li data-i18n="pricing_starter_feature3">기본 분석 이벤트</li>
+            </ul>
+          </article>
+          <article class="card pricing-card featured reveal">
+            <h3 data-i18n="pricing_growth_name">Growth</h3>
+            <p class="price" data-i18n="pricing_growth_price">월 390만원~</p>
+            <ul>
+              <li data-i18n="pricing_growth_feature1">MVP 설계 및 개발</li>
+              <li data-i18n="pricing_growth_feature2">에이전트 워크플로우 구축</li>
+              <li data-i18n="pricing_growth_feature3">사용성 개선 반복</li>
+            </ul>
+          </article>
+          <article class="card pricing-card reveal">
+            <h3 data-i18n="pricing_partner_name">Partner</h3>
+            <p class="price" data-i18n="pricing_partner_price">문의</p>
+            <ul>
+              <li data-i18n="pricing_partner_feature1">장기 제품 고도화</li>
+              <li data-i18n="pricing_partner_feature2">팀 협업 자동화</li>
+              <li data-i18n="pricing_partner_feature3">맞춤형 운영 전략</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="reveal" data-i18n="faq_heading">자주 묻는 질문</h2>
+        <div class="faq-list">
+          <article class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false" data-i18n="faq_q1">개발 지식이 거의 없어도 시작할 수 있나요?</button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq_a1">가능합니다. 비개발자도 이해할 수 있게 요구사항을 정리하고, 의사결정 포인트를 쉽게 설명합니다.</p>
+            </div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false" data-i18n="faq_q2">프로젝트 기간은 얼마나 걸리나요?</button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq_a2">범위에 따라 다르지만 보통 2~6주 내 초기 MVP를 확인할 수 있도록 설계합니다.</p>
+            </div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false" data-i18n="faq_q3">AI 에이전트는 어떤 방식으로 활용되나요?</button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq_a3">기획 정리, 코드 초안, 테스트 자동화, 문서화 등 반복 업무를 중심으로 역할 기반으로 활용합니다.</p>
+            </div>
+          </article>
+          <article class="faq-item reveal">
+            <button class="faq-question" aria-expanded="false" data-i18n="faq_q4">완성 후 유지보수도 지원하나요?</button>
+            <div class="faq-answer" hidden>
+              <p data-i18n="faq_a4">지원합니다. 운영 지표 모니터링, 기능 개선, 성능 최적화까지 연속적으로 대응합니다.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta" id="contact">
+      <div class="container reveal">
+        <h2 data-i18n="contact_heading">아이디어를 실제 앱으로 전환할 준비가 되셨나요?</h2>
+        <p data-i18n="contact_subtitle">입문자도 이해할 수 있는 언어로, mowrix가 첫 빌드부터 출시까지 함께합니다.</p>
+
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <label for="contactName" data-i18n="contact_name_label">이름</label>
+            <input
+              id="contactName"
+              name="name"
+              type="text"
+              autocomplete="name"
+              required
+              placeholder="홍길동"
+              data-i18n-placeholder="contact_name_placeholder"
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="contactEmail" data-i18n="contact_email_label">이메일</label>
+            <input
+              id="contactEmail"
+              name="userEmail"
+              type="email"
+              autocomplete="email"
+              required
+              placeholder="name@example.com"
+              data-i18n-placeholder="contact_email_placeholder"
+            />
+          </div>
+
+          <div class="form-row">
+            <label for="contactMessage" data-i18n="contact_message_label">문의 내용</label>
+            <textarea
+              id="contactMessage"
+              name="message"
+              required
+              placeholder="원하시는 앱 기능과 일정, 참고 자료를 간단히 적어주세요."
+              data-i18n-placeholder="contact_message_placeholder"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" data-track="contact_submit" data-i18n="contact_submit">문의 보내기</button>
+          <p class="form-hint" data-i18n="contact_hint">작성한 내용을 바탕으로 메일 앱에서 전송됩니다.</p>
+          <p class="form-status" id="contactStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p data-i18n="footer_text">© 2026 mowrix. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
